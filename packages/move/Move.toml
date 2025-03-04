@@ -6,4 +6,4 @@ git = "https://github.com/movementlabsxyz/aptos-core.git"
 rev = "movement"
 subdir = "aptos-move/framework/aptos-framework"
 [addresses]
-deployment_addr='_'
+deployment_addr='0xf853c26114b16240cca134c0037a1ece16b55f02f66b784f1a97f3dcd3807238'

@@ -3,6 +3,7 @@
 <div align="center">
 
 ![logo](/assets/logo_small.png)
+
 <h4 align="center">
   <a href="https://scaffold-move-docs.vercel.app/">Documentation</a> |
   <a href="https://scaffold-move-chi.vercel.app/">Website</a>
@@ -28,7 +29,7 @@ Perfect for hackathons, prototyping, or launching your next Move project!
 Before you begin, you need to install the following tools:
 
 - [Node (>= v18.17)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
+- [pnpm (>= v9.0.0)](https://pnpm.io/installation)
 - [Git](https://git-scm.com/downloads)
 - [Aptos CLI](https://aptos.dev/en/build/cli)
 
@@ -41,13 +42,13 @@ To get started with Scaffold Move, follow the steps below:
 ```
 git clone https://github.com/arjanjohan/scaffold-move.git
 cd scaffold-move
-yarn install
+pnpm install
 ```
 
-2. THen, initialize a new account.
+2. Then, initialize a new account.
 
 ```
-yarn account
+pnpm account
 ```
 
 This command overwrites `packages/move/.aptos/config.yaml` with a new Aptos account. The new address is copied over to the first address in the Move.toml file. If no address exists in this file, it is added on a new line.
@@ -57,15 +58,15 @@ Use the `--network` tag to define a network to create the account on. Alternativ
 3. Deploy the test modules:
 
 ```
-yarn deploy
+pnpm deploy
 ```
 
-This command deploys the move modules to the selected network. The modules are located in `packages/move/sources` and can be modified to suit your needs. The `yarn deploy` command uses `aptos move publish` to publish the modules to the network. After this is executes the script located in `scripts/loadModules.js` to make the new modules available in the nextjs frontend.
+This command deploys the move modules to the selected network. The modules are located in `packages/move/sources` and can be modified to suit your needs. The `pnpm deploy` command uses `aptos move publish` to publish the modules to the network. After this is executes the script located in `scripts/loadModules.js` to make the new modules available in the nextjs frontend.
 
 4. On a second terminal, start your NextJS app:
 
 ```
-yarn start
+pnpm start
 ```
 
 Visit your app on: `http://localhost:3000`. You can interact with your Move modules using the `Debug Modules` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
@@ -102,6 +103,7 @@ Your input is valuable! If you have suggestions or want to contribute, we encour
 ## Credits
 
 None of this would have been possible without the great work done in:
+
 - [Scaffold-ETH 2](https://github.com/scaffold-eth/scaffold-eth-2)
 - [Aptos Explorer](https://github.com/aptos-labs/explorer)
 - [Aptos Wallet Adapter](https://github.com/aptos-labs/aptos-wallet-adapter)

@@ -1,10 +1,10 @@
 {
   "name": "@scaffold-move/move",
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "pnpm@9.0.0",
   "scripts": {
     "account": "node scripts/init-account.js",
     "chain": "aptos node run-local-testnet",
-    "deploy": "node scripts/deploy.js && node scripts/loadModules.js",
+    "publish-modules": "node scripts/deploy.js && node scripts/loadModules.js",
     "compile": "aptos move compile",
     "test": "aptos move test",
     "format": "aptos move fmt",

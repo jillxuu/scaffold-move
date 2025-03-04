@@ -4,6 +4,8 @@
  */
 import { GenericModulesDeclaration } from "~~/utils/scaffold-move/module";
 
-const externalModules = {} as const;
+const externalModules = {
+  2: {},
+} as const;
 
 export default externalModules satisfies GenericModulesDeclaration;

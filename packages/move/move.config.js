@@ -1,14 +1,11 @@
-
-const defaultNetwork = 'movement_testnet';
-// const overrideMoveVersion = 'move-1'; // Uncomment to use Move-1 for all networks
+const defaultNetwork = "testnet";
 
 const networks = {
-  movement_testnet: {
-    "rest-url": "https://aptos.testnet.bardock.movementlabs.xyz/v1",
-    // "faucet-url": "https://faucet.testnet.bardock.movementnetwork.xyz/",
+  testnet: {
+    "rest-url": "https://api.testnet.aptoslabs.com/v1",
   },
-  movement_mainnet: {
-    "rest-url": "https://mainnet.movementnetwork.xyz/v1"
+  mainnet: {
+    "rest-url": "https://api.mainnet.aptoslabs.com/v1",
   },
 };
 

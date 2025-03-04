@@ -17,33 +17,12 @@ type Chains = {
 };
 
 export const defaultChains: Chains = {
-  movement_testnet: {
-    id: 250,
-    name: "Movement Bardock Testnet",
-    network: Network.CUSTOM,
-    fullnode: "https://aptos.testnet.bardock.movementlabs.xyz/v1",
-    indexer: "",
-    faucet: "https://faucet.movementnetwork.xyz/?network=bardock",
-    block_explorer: "https://explorer.movementnetwork.xyz",
-    explorer_network_param: "bardock+testnet",
-    native_token_symbol: "MOVE",
-  },
-  movement_mainnet: {
-    id: 126,
-    name: "Movement Mainnet",
-    network: Network.CUSTOM,
-    fullnode: "https://mainnet.movementnetwork.xyz/v1",
-    indexer: "",
-    block_explorer: "https://explorer.movementnetwork.xyz",
-    explorer_network_param: "mainnet",
-    native_token_symbol: "MOVE",
-  },
-  aptos_mainnet: {
+  mainnet: {
     id: NetworkToChainId[Network.MAINNET],
     name: "Aptos Mainnet",
     network: Network.MAINNET,
   },
-  aptos_testnet: {
+  testnet: {
     id: NetworkToChainId[Network.TESTNET],
     name: "Aptos Testnet",
     network: Network.TESTNET,
